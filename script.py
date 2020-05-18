@@ -73,11 +73,7 @@ rede.score(x_test,alvos_test)
 rede.n_iter_
 rede.loss_
 
-forecast = rede.predict(x)
+matplotlib.pyplot.plot(xx,alvos, forecast) 
 
-
-Sabado
-#Jupyter Notebook
-
-Domingo
-#Texto
+matplotlib.pyplot.plot(x,alvos,label='dados reais')
+matplotlib.pyplot.plot(xx,forecast, label = 'previsão')
